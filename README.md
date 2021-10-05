@@ -1,8 +1,5 @@
 # cake-back-end
 <div id="top"></div>
-
-<h3 align="center">Best-README-Template</h3>
-<!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
   <ol>
@@ -16,11 +13,8 @@
       <a href="#getting-started">Per iniziare</a>
       <ul>
         <li><a href="#prerequisites">Prerequisiti</a></li>
-        <li><a href="#installation">Installazione</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Utilizzo</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
   </ol>
 </details>
 
@@ -40,82 +34,67 @@ prezzo pieno, secondo giorno costano l’80%, il terzo giorno il 20%. Il quarto 
 sono commestibili e devono essere ritirati dalla vendita edi conseguenza non più visibili in vetrina.
 
 
+<!-- BUILT WITH -->
 ### Tecnologie utilizzate
-
 l'applicazione si compone di 2 moduli: front-end e back-end.
 Di seguito sono elencate le tecnologie utilizzate in fase di sviluppo per ciascun modulo.
 
 ####Front-end
-
 * Piattaforma OS Linux Mint(ver.20)
+* Git (ver.2.25.1)
+* Maven (ver.3.6.3)
 * Visual Studio Code
 * Node.js(ver. 14.17.6 )
 * NPM(ver. 6.14.15)
 * Angular (ver. 12.2.4)
-* Okta per la gestione degli accessi
-* Git (ver.2.25.1)
-* Maven (ver.3.6.3)
+* Okta (Gestione accessi)
 
 ####Back-end
 * Piattaforma OS Linux Mint(ver.20)
-* IntelliJIdea CE 2021.2
-* Spring Boot (ver. 2.5.5)
 * Git (ver.2.25.1)
 * Maven (ver.3.6.3)
+* IntelliJIdea CE 2021.2
+* Spring Boot (ver. 2.5.5)
     * web
     * data-jpa
     * Lombok
     * mysql-connector
 
 ####Data Base
-Per il Db è stato utilizzato MySql/WorkBench (ver.8.0.26)
+MySql (ver.8.0.26)
 
 <!-- GETTING STARTED -->
 ## Per iniziare
 Prima di avviare l'applicazione è necessario:
 * creare schema e tabelle del DB
 * creare la cartella destinata ad upload/download delle immagini
-* scaricare i due moduli back-end e front-end
-    ### Prerequisiti
-Di seguito vengono esposti i passi preliminari da fare:
+* scaricare dal repository i due moduli dell'applicazione: back-end e front-end
 
-* Nel modulo di back-end è presente una cartella denominata setup al cui interno vi è un file zip contenente la cartella tmp_img la quale va decompressa subito sotto <USER_HOME>.
-Al suo interno sono già presenti alcune immagini che verranno utilizzate al primo avvio.
-* Nel modulo di back-end è presente una cartella denominata db-scripts al cui interno sono presenti i file:
-  * 01-create-user.sql
-  * 02-create-db.sql
+<!-- PREREQUISITES -->
+### Prerequisiti
+* tmp_img
+Decomprimere lo zip <cake-back-end>/setup/tmp_img.zip  subito sotto <USER_HOME>
+Per esempio in OS linux è: /home/<username>
+in windows è:  C:\Users\username
+Verrà creata la cartella tmp_img utilizzata per upload/download di immagini.
+Assicurarsi che la cartella abbia permessi di lettura/scrittura
 
-Accedere a MySql ed eseguirli nel seguente ordine: 01-create-user.sql -> 02-create-db.sql
+* DB Setup
+1. Accedere a MySql
+2. eseguire gli scripts contenuti in <cake-back-end>/setup/db-scripts nel seguente ordine: 01-create-user.sql 02-create-db.sql
 
-### Installazione
+* CAKE-FRONT-END
+  * git clone https://github.com/mandreuzzi/cake-front-end.git
+  * cd in cake-front-end
+  * npm install
 
-1. Tramite git o IDE, scaricare i due moduli da Github tramite i seguenti link:
-
-   ```
-   https://github.com/mandreuzzi/cake-front-end.git
-   ```
-
-   ```
-   https://github.com/mandreuzzi/cake-back-end.git
-   ```
-
-2. Per il modulo di front-end:
-   * Tramite riga di comando o IDE accedere alla root dell'applicazione ed eseguire:
-      ```sh
-      npm install
-      ```
-   * Per avviare l'applicazione sulla porta 4200 eseguire:
-```sh
-   ng serve --open
-   ```
-3. Per il modulo di back-end
-   * Importare il modulo nel proprio IDE ed  eseguirelo come progetto spring boot  
-   * oppure da linea di comando tramite plugin maven:
-   ```sh
-      mvn spring-boot:run
-      ``` 
-   
-Per accedere al backoffice le credeziali delle due utenze sono:
-* username: maria@email.com password: Ottobre2021!
-* username: luana@email.com password: Ottobre2021!
+* CAKE-BACK-END
+  * git clone https://github.com/mandreuzzi/cake-back-end.git
+  * cd in cake-back-end
+  * mvn spring-boot:run oppure utilizzare IDE
+  
+* Le immagini da caricare non devono superare 1MB
+* Per accedere al backoffice le credeziali delle due utenze sono:
+  * username: maria@email.com password: Ottobre2021!
+  * username: luana@email.com password: Ottobre2021!
    
