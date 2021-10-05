@@ -23,7 +23,7 @@
 <!-- ABOUT THE PROJECT -->
 ## Il progetto
 Una pasticceria vende dolci che hanno un nome ed un prezzo.
-I dolci vengono esposti su una vetrina virtuale dove tutti possono vedere vederli in vendita.
+I dolci vengono esposti su una vetrina virtuale dove tutti possono vederli in vendita.
 Andando nella pagina di dettaglio di ciascun dolce ne vengono indicati gli ingredienti che lo compongono.
 
 La gestione della pasticceria è in mano a Luana e Maria che vogliono avere il
@@ -31,8 +31,16 @@ proprio account per poter accedere all'area di backoffice tramite email e passwo
 Nell’area di backoffice si possono gestire i dolci creandoli, modifcandoli o eliminandoli(CRUD).
 I dolci in vendita invecchiano ed in base al tempo trascorso dalla loro messa in vendita hanno prezzi diversi: primo giorno
 prezzo pieno, secondo giorno costano l’80%, il terzo giorno il 20%. Il quarto giorno non
-sono commestibili e devono essere ritirati dalla vendita edi conseguenza non più visibili in vetrina.
+sono commestibili e devono essere ritirati dalla vendita edi conseguenza non più visibili in vetrina. 
 
+L'applicazione si compone delle seguenti funzionalità:
+* Lista Dolci
+* Ricerca dolce per nome
+* Dettaglio dolce
+* Login backoffice
+* Creazione nuovo dolce
+* Modifica dolce
+* Elimina dolce
 
 <!-- BUILT WITH -->
 ### Tecnologie utilizzate
