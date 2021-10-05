@@ -53,11 +53,15 @@ Di seguito sono elencate le tecnologie utilizzate in fase di sviluppo per ciascu
 * NPM(ver. 6.14.15)
 * Angular (ver. 12.2.4)
 * Okta per la gestione degli accessi
+* Git (ver.2.25.1)
+* Maven (ver.3.6.3)
 
 ####Back-end
 * Piattaforma OS Linux Mint(ver.20)
 * IntelliJIdea CE 2021.2
 * Spring Boot (ver. 2.5.5)
+* Git (ver.2.25.1)
+* Maven (ver.3.6.3)
     * web
     * data-jpa
     * Lombok
